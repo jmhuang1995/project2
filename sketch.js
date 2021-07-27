@@ -100,11 +100,25 @@ var layout = {
   xaxis: {
     title: 'Years',
     showgrid: false,
-    zeroline: false
+    zeroline: false,
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 1,
+    ticklen: 5,
+    tickwidth: 1,
+    tickcolor: '#000'
   },
   yaxis: {
     title: 'HP',
-    showline: false
+    showline: false,
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 10,
+    ticklen: 5,
+    tickwidth: 1,
+    tickcolor: '#000'
   },
   shapes:[{
     type: 'line',
@@ -125,11 +139,25 @@ var layout2 = {
   xaxis: {
     title: 'Years',
     showgrid: false,
-    zeroline: false
+    zeroline: false,
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 1,
+    ticklen: 5,
+    tickwidth: 1,
+    tickcolor: '#000'
   },
   yaxis: {
     title: 'MPG',
-    showline: false
+    showline: false,
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 1,
+    ticklen: 5,
+    tickwidth: 1,
+    tickcolor: '#000'
   },
     shapes:[{
     type: 'line',
