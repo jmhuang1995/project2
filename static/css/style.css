@@ -1,14 +1,14 @@
 .tooltip {
   position: absolute;
-  width: 135px;
-  height: 60px;
-  padding: 2px;
-  padding-top: 8px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  padding-top: 16px;
   font: 12px sans-serif;
   color: white;
   text-align: center;
   background: #551aaf;
-  border: 0;
+  border: 10;
   border-radius: 10px;
 }
 
