@@ -14,8 +14,8 @@ function init() {
 function demoInfo(id) {
     d3.json("data/cardata.json").then((data)=> {
         //call in metadata to demographic panel//
-    var cardata = data.cars;
-    var result = caredata.filter(car => car.index_col.toString() === id)[2]
+    var car_data = data.cars;
+    var result = car_data.filter(car => car.index_col.toString() === id)[0]
 
     console.log(`test ${result}`)
 
