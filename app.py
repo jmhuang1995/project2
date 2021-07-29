@@ -34,12 +34,12 @@ app = Flask(__name__)
 def data():
     session = Session(engine)
     print(engine.table_names())
-    results = session.query(new_car.index_col,new_car.make,new_car.model,new_car.year,new_car.highway_mpg,new_car.city_mpg,new_car.popularity,new_car.msrp).all()
+    results = session.query(new_car.index_col,new_car.make,new_car.model,new_car.year,new_car.highway_mpg,new_car.city_mpg,new_car.popularity,new_car.msrp,new_car.engine_hp).all()
 
     session.close()
 
     all_cars = []
-    for index_col,make,model,year,highway_mpg,city_mpg,popularity,msrp in results:
+    for index_col,make,model,year,highway_mpg,city_mpg,popularity,msrp,engine_hp in results:
         car_dict = {}
         car_dict["index_col"] = index_col
         car_dict["make"] = make
@@ -49,6 +49,7 @@ def data():
         car_dict["city_mpg"] = city_mpg
         car_dict["popularity"] = popularity
         car_dict["msrp"] = msrp
+        car_dict["engine_hp"] = engine_hp
         all_cars.append(car_dict)
 
     return jsonify(all_cars)
